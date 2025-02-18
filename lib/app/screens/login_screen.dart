@@ -6,7 +6,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  bool _isObscure = true; // متغير لتحديد حالة الإخفاء
+  bool _isObscure = true;
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             SizedBox(height: 10),
             TextField(
-              obscureText: _isObscure, // التحكم في إظهار وإخفاء الباسورد
+              obscureText: _isObscure,
               decoration: InputDecoration(
                 labelText: "Password",
                 border: OutlineInputBorder(),
@@ -45,7 +45,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   onPressed: () {
                     setState(() {
-                      _isObscure = !_isObscure; // تغيير الحالة عند الضغط
+                      _isObscure = !_isObscure;
                     });
                   },
                 ),

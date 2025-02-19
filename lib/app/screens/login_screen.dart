@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import 'home_screen.dart';
 class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _LoginScreenState createState() => _LoginScreenState();
 }
 
 class _LoginScreenState extends State<LoginScreen> {
   bool _isObscure = true;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,7 +57,10 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+
+                Get.to(LipMovementAnalysisPage());
+              },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color(0xFF0098FF),
                 minimumSize: Size(double.infinity, 50),

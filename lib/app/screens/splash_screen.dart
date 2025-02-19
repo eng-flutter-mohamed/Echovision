@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // الانتظار لمدة 3 ثواني ثم الانتقال للصفحة التالية
-    Timer(const Duration(seconds: 3), () {
+    Timer(const Duration(milliseconds: 800), () {
     Get.to(LoginScreen());
     });
   }
